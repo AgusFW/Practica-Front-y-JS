@@ -1,0 +1,33 @@
+#navbarNav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.masthead{
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    color: white;
+}
+
+.cards{
+    margin: 2% 7% 3%;
+    padding: 0 10%;
+}
+.baoct{
+    background-color: rgb(65, 64, 64);
+}
+.honolulu{
+    color: white;
+    background-color: rgb(65, 64, 64);
+}
+input{
+    max-width: 60%;
+}
+.contenedor{
+    padding: 1% 19%;
+}
+.piepag{
+    background: linear-gradient(90deg, rgba(18,13,105,1) 0%, rgba(47,47,182,1) 35%);
+    padding: 2% 7%;
+    color: white;
+}
