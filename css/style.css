@@ -27,3 +27,10 @@ input{
     padding: 2% 7%;
     color: white;
 }
+#cajas{
+    border-color: #0662e3;
+}
+#cajas:hover{
+    border-color: orange;
+}
+

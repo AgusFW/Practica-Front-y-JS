@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo práctico integrador JS</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(65, 64, 64);>
+            <div class="container-fluid">
+              <a class="navbar-brand link-light" style="padding-left: 5%;" href="#">Conf Bs As</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" style="padding-right: 5%;" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-muted" href="index.html">La Conferencia</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="#">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-success" href="comprar-tickets.html">Comprar Tickets</a>
+              </li>
+            </ul>
+          </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="row" style="padding:4% 10% 1% 10%;">
+            <div class="col-md-4">
+                <div class="card" id="cajas" style="width: 20rem; height: 15rem; border-radius: 0%; border-width: 2px;">
+                    <div class="card-body">
+                      <h5 class="card-title d-flex justify-content-center"style="padding: 5%;">Estudiante</h5>
+                      <h6 class="card-subtitle mb-2 text-muted d-flex justify-content-center" style="padding: 3%;">Tienen un descuento</h6>
+                      <p class="card-text d-flex justify-content-center" style="padding: 3%;"><b>80%</b></p>
+                      <p class="card-text d-flex justify-content-center" style="padding: 3%; color:dimgrey;">* presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="cajas" style="width: 20rem; height: 15rem; border-radius: 0%; border-width: 2px;">
+                    <div class="card-body">
+                      <h5 class="card-title d-flex justify-content-center"style="padding: 5%;">Trainee</h5>
+                      <h6 class="card-subtitle mb-2 text-muted d-flex justify-content-center" style="padding: 3%;">Tienen un descuento</h6>
+                      <p class="card-text d-flex justify-content-center" style="padding: 3%;"><b>50%</b></p>
+                      <p class="card-text d-flex justify-content-center" style="padding: 3%; color:dimgrey;">* presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="cajas" style="width: 20rem; height: 15rem; border-radius: 0%; border-width: 2px;">
+                    <div class="card-body">
+                      <h5 class="card-title d-flex justify-content-center"style="padding: 5%;">Junior</h5>
+                      <h6 class="card-subtitle mb-2 text-muted d-flex justify-content-center" style="padding: 3%;">Tienen un descuento</h6>
+                      <p class="card-text d-flex justify-content-center" style="padding: 3%;"><b>15%</b></p>
+                      <p class="card-text d-flex justify-content-center" style="padding: 3%; color:dimgrey;">* presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <p class="d-flex justify-content-center">VENTA</p>
+        </section>
+        <section class="row">
+            <h3 class="d-flex justify-content-center"><b>VALOR DE TICKET $200</b><h3></h3>>
+        </section>
+        <section class="row d-flex justify-content-center">
+            <input type="nombre" class="form-control" placeholder="Nombre" style="width: 37%; margin: 1%;">
+            <input type="apellido" class="form-control" placeholder="Apellido" style="width: 37%; margin: 1%;">
+         </section>
+         <section class="mb-3 d-flex justify-content-center">
+          <div class="row" style="width: 77%;">
+            <input type="correo" class="form-control" placeholder="Correo">
+          </div>
+         </section>
+         <section class="row d-flex justify-content-center">
+          <div class="col-md-6">
+            <label class="form-label" style="padding-left: 24%; color: dimgray;">Cantidad</label>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" style="color: dimgray;">Categoria</label>
+          </div>
+         </section>
+         <section class="row d-flex justify-content-center">
+            <input type="cantidad" class="form-control" id="cantidad" placeholder="cantidad" style="width: 37%; margin: 1%;">
+            <select class="form-select" id="categoria" aria-label="Default select example" style="width: 37%; margin: 1%; color: dimgray;">
+              <option selected>Categoria</option>
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+              <option value="4">Regular</option>
+          </select>
+       </section>
+       <section class="row d-flex justify-content-center">
+       <input class="form-control" style="width: 76%; background-color: rgba(100, 148, 237, 0.298);" type="text" placeholder="Total a Pagar: $" aria-label="Disabled input example" disabled>
+      </section>
+      <section class="row d-flex justify-content-center" style="padding-bottom: 5%;">
+        <button type="button" class="btn btn-success" style="width: 37%; margin: 1%;">Borrar</button>
+        <button type="button" class="btn btn-success" style="width: 37%; margin: 1%;">Resumen</button>
+     </section>
+    </main>
+    <footer class="row piepag">
+        <div class="col-md-2">Preguntas frecuentes</div>
+        <div class="col-md-1">Contáctanos</div>
+        <div class="col-md-1">Prensa</div>
+        <div class="col-md-2">Conferencias</div>
+        <div class="col-md-2">Términos y condiciones</div>
+        <div class="col-md-2">Privacidad</div>
+        <div class="col-md-2">Estudiantes</div>
+      </footer>
+    
+</body>
+</html>
