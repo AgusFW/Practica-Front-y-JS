@@ -99,9 +99,9 @@
           </div>
          </section>
          <section class="row d-flex justify-content-center">
-            <input type="cantidad" class="form-control" id="cantidad" placeholder="cantidad" style="width: 37%; margin: 1%;">
-            <select class="form-select" id="categoria" aria-label="Default select example" style="width: 37%; margin: 1%; color: dimgray;">
-              <option selected>Categoria</option>
+            <input type="number" id="cantidad" class="form-control" placeholder="cantidad" style="width: 37%; margin: 1%;">
+            <select class="form-select" aria-label="Default select example" style="width: 37%; margin: 1%; color: dimgray;">
+              <option selected id="categoria">Categoria</option>
               <option value="1">Estudiante</option>
               <option value="2">Trainee</option>
               <option value="3">Junior</option>
@@ -109,11 +109,11 @@
           </select>
        </section>
        <section class="row d-flex justify-content-center">
-       <input class="form-control" style="width: 76%; background-color: rgba(100, 148, 237, 0.298);" type="text" placeholder="Total a Pagar: $" aria-label="Disabled input example" disabled>
+       <input class="form-control" id="total" style="width: 76%; background-color: rgba(100, 148, 237, 0.298);" type="number" placeholder="Total a Pagar: $" aria-label="Disabled input example" disabled>
       </section>
       <section class="row d-flex justify-content-center" style="padding-bottom: 5%;">
         <button type="button" class="btn btn-success" style="width: 37%; margin: 1%;">Borrar</button>
-        <button type="button" class="btn btn-success" style="width: 37%; margin: 1%;">Resumen</button>
+        <button type="button" onclick="calcular();" class="btn btn-success" style="width: 37%; margin: 1%;">Resumen</button>
      </section>
     </main>
     <footer class="row piepag">
@@ -125,6 +125,6 @@
         <div class="col-md-2">Privacidad</div>
         <div class="col-md-2">Estudiantes</div>
       </footer>
-    
+  <script src="js/funcion.js"></script>   
 </body>
 </html>
