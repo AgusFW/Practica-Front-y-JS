@@ -1,36 +1,3 @@
-/*
-function valorRegular()
-{
-    ticket=200;
-    cantidad=document.getElementById("cantidad").value;
-
-    var select=document.getElementById("categoria");
-    var valorSel=select.options[select.selectedIndex].value;
-
-    result=0;
-
-    if(valorSel="4")
-    {
-        result=200*cantidad;
-    }
-}
-
-function calcular() 
-{
-    if(valorCat="1")
-    {
-        result= valorRegular() - (valorRegular()*0.8)
-    } else if(valorCat="2")
-    {
-            result= valorRegular() - (valorRegular()*0.5)
-    }else if(valorCat="3")
-    {
-        result= valorRegular() - (valorRegular()*0.15)
-    }
-}
-
-document.getElementById("total").value=result;
-*/
 
 function calcular()
 {
