@@ -1,15 +1,15 @@
 /*
-const ticket = 200;
-    var cantidad=document.getElementById("cantidad").value;
+function valorRegular()
+{
+    ticket=200;
+    cantidad=document.getElementById("cantidad").value;
 
-    var categoria=document.getElementById("categoria");
-    var valorCat=categoria.options(categoria.categoriaIndex).value;
+    var select=document.getElementById("categoria");
+    var valorSel=select.options[select.selectedIndex].value;
 
     result=0;
 
-function valorRegular()
-{
-    if(valorCat="4")
+    if(valorSel="4")
     {
         result=200*cantidad;
     }
@@ -57,6 +57,12 @@ function calcular()
             result= cantidad*ticket
             break;
     }
-
+ 
+    document.getElementById("total").value=result; 
 }
-document.getElementById("total").value=result;
+
+function borrar()
+{
+    document.getElementById("cantidad").value=0;
+    document.getElementById("total").value=0;
+}

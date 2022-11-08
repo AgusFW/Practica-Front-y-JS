@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabajo práctico integrador JS</title>
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/funcion.js"></script> 
+    <link href="css/style.css" rel="stylesheet"> 
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -99,22 +96,22 @@
             <label class="form-label" style="color: dimgray;">Categoria</label>
           </div>
          </section>
-         <section class="row d-flex justify-content-center">
-            <input type="number" id="cantidad" class="form-control" placeholder="cantidad" style="width: 37%; margin: 1%;">
-            <select id="categoria" class="form-select" aria-label="Default select example" style="width: 37%; margin: 1%; color: dimgray;">
-              <option value="1">Estudiante</option>
-              <option value="2">Trainee</option>
-              <option value="3">Junior</option>
-              <option selected value="4">Regular</option>
-          </select>
-       </section>
-       <section class="row d-flex justify-content-center">
-       <input class="form-control" id="total" style="width: 76%; background-color: rgba(100, 148, 237, 0.298);" type="number" placeholder="Total a Pagar: $" aria-label="Disabled input example" disabled>
+        <section class="row d-flex justify-content-center">
+           <input type="number" id="cantidad" class="form-control" placeholder="cantidad" style="width: 37%; margin: 1%;">
+           <select id="categoria" class="form-select" aria-label="Default select example" style="width: 37%; margin: 1%; color: dimgray;">
+             <option value="1">Estudiante</option>
+             <option value="2">Trainee</option>
+             <option value="3">Junior</option>
+             <option selected value="4">Regular</option>
+         </select>
       </section>
-      <section class="row d-flex justify-content-center" style="padding-bottom: 5%;">
-        <button type="button" class="btn btn-success" style="width: 37%; margin: 1%;">Borrar</button>
-        <button type="button" value="calcular" onclick="calcular()" class="btn btn-success" style="width: 37%; margin: 1%;">Resumen</button>
+      <section class="row d-flex justify-content-center">
+      <input class="form-control" id="total" style="width: 76%; background-color: rgba(100, 148, 237, 0.298);" type="number" placeholder="Total a Pagar: $" aria-label="Disabled input example" disabled>
      </section>
+     <section class="row d-flex justify-content-center" style="padding-bottom: 5%;">
+       <button type="button" onclick="borrar()" class="btn btn-success" style="width: 37%; margin: 1%;">Borrar</button>
+       <button type="button" onclick="calcular()" class="btn btn-success" style="width: 37%; margin: 1%;">Resumen</button>
+    </section>
     </main>
     <footer class="row piepag">
         <div class="col-md-2">Preguntas frecuentes</div>
@@ -124,6 +121,10 @@
         <div class="col-md-2">Términos y condiciones</div>
         <div class="col-md-2">Privacidad</div>
         <div class="col-md-2">Estudiantes</div>
-      </footer>  
+      </footer> 
 </body>
+
+<script src="js/funcion.js"></script> 
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </html>
